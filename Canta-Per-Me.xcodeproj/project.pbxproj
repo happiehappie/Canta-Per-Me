@@ -12,9 +12,11 @@
 		7E1CBC7F1E62D8AA00EE87D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1CBC7D1E62D8AA00EE87D5 /* Main.storyboard */; };
 		7E1CBC811E62D8AA00EE87D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E1CBC801E62D8AA00EE87D5 /* Assets.xcassets */; };
 		7E1CBC841E62D8AA00EE87D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1CBC821E62D8AA00EE87D5 /* LaunchScreen.storyboard */; };
+		E15957BE13A0818E24FEF6A4 /* Pods_Canta_Per_Me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244A8DAE00FD0A78B5E70089 /* Pods_Canta_Per_Me.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		244A8DAE00FD0A78B5E70089 /* Pods_Canta_Per_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Canta_Per_Me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1CBC761E62D8AA00EE87D5 /* Canta-Per-Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Canta-Per-Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1CBC791E62D8AA00EE87D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E1CBC7B1E62D8AA00EE87D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		7E1CBC801E62D8AA00EE87D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E1CBC831E62D8AA00EE87D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E1CBC851E62D8AA00EE87D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CDC4B420A5301CA02D23CF9 /* Pods-Canta-Per-Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Canta-Per-Me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Canta-Per-Me/Pods-Canta-Per-Me.release.xcconfig"; sourceTree = "<group>"; };
+		8DDE9E1EFF659AE5E5900FA4 /* Pods-Canta-Per-Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Canta-Per-Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Canta-Per-Me/Pods-Canta-Per-Me.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15957BE13A0818E24FEF6A4 /* Pods_Canta_Per_Me.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A322117B5D0932E7CA50D39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				244A8DAE00FD0A78B5E70089 /* Pods_Canta_Per_Me.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7E1CBC6D1E62D8AA00EE87D5 = {
 			isa = PBXGroup;
 			children = (
 				7E1CBC781E62D8AA00EE87D5 /* Canta-Per-Me */,
 				7E1CBC771E62D8AA00EE87D5 /* Products */,
+				BAB01777E2E19C46EA549262 /* Pods */,
+				2A322117B5D0932E7CA50D39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "Canta-Per-Me";
 			sourceTree = "<group>";
 		};
+		BAB01777E2E19C46EA549262 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DDE9E1EFF659AE5E5900FA4 /* Pods-Canta-Per-Me.debug.xcconfig */,
+				8CDC4B420A5301CA02D23CF9 /* Pods-Canta-Per-Me.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E1CBC881E62D8AA00EE87D5 /* Build configuration list for PBXNativeTarget "Canta-Per-Me" */;
 			buildPhases = (
+				708316EE126A621FAE8138E1 /* [CP] Check Pods Manifest.lock */,
 				7E1CBC721E62D8AA00EE87D5 /* Sources */,
 				7E1CBC731E62D8AA00EE87D5 /* Frameworks */,
 				7E1CBC741E62D8AA00EE87D5 /* Resources */,
+				91B3F1D6AE53BC64B8AEFC10 /* [CP] Embed Pods Frameworks */,
+				162BCB30C8E98B004CBC1607 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		162BCB30C8E98B004CBC1607 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Canta-Per-Me/Pods-Canta-Per-Me-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708316EE126A621FAE8138E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91B3F1D6AE53BC64B8AEFC10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Canta-Per-Me/Pods-Canta-Per-Me-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E1CBC721E62D8AA00EE87D5 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		7E1CBC891E62D8AA00EE87D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DDE9E1EFF659AE5E5900FA4 /* Pods-Canta-Per-Me.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C5DH47KNGM;
@@ -270,6 +346,7 @@
 		};
 		7E1CBC8A1E62D8AA00EE87D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CDC4B420A5301CA02D23CF9 /* Pods-Canta-Per-Me.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C5DH47KNGM;
